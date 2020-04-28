@@ -20,36 +20,114 @@ header {
 
 /* Styling the Navigation Bar */
 .navigation-bar {
-  background: teal;
+  background: black;
   position: relative;
-  height: 15%;
+  height: 10%;
   padding: 5px 5%;  
 }
 
 .brand-name {
   text-decoration: none;
   color: #fff;
-  font-size: 200%;
+  font-size: 30px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  margin: 0;
+  margin-top: 25px;
   padding: 0;
   letter-spacing: 2px;
 }
 .brand-name:hover {
   color: gold;
   font-weight: normal;
-  font-style: italic;
 }
 
 .nav {
+  height: 100%;
   position: absolute;
   top: 0;
   right: 5%;
   list-style-type: none;
-  display: inline;
+  margin: 0;
+  padding: 0;
 }
-.nav ul {display: inline;}
 .nav-item {
-  display: inline;
+  display: block;
+  float: left;
+  width: 100px;
+  height: 100%;
+}
+.nav-link {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: #fff;
+  height: 100%;
+  display: block;
+  text-align: center;
+  width: 99px;
+  border-left: solid 1px gold;
+  line-height: 45px;
+}
+.nav-link:last-child {border-right: solid 1px gold;}
+.nav-link:hover {
+  color: gold;
+}
+
+/* Styling the submenu */
+.nav ul {
+  display: none;
+  width: 150px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0.25rem;
+  background: #000;
+  border-left: solid 1px gold;
+}
+.nav-item:hover > ul {display: block;}
+.nav ul li {
+  display: block;
+  padding: 0.125rem 0;
+  height: 25px;
+}
+.nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+.nav ul li a:hover {color: gold;}
+
+/* Styling the overlay class */
+.overlay {
+  position: absolute;
+  top: 0;
+  height: 400px;
+  background: linear-gradient(45deg, rgba(242,0,255,0.7) 0%, rgba(255,186,66,0.7) 100%);
+  width: 100%;
+  overflow: hidden;
+}
+/* Styling the title section */
+.container {
+  width: 90%;
+  margin: 5%;
+}
+.section-title {
+  text-align: center;
+}
+.subheading {
+  margin: 0;
+  font-weight: normal;
+  color: #ddd;
+  letter-spacing: 3px;
+  word-spacing: 8px;
+}
+.title {
+  color: #fff;
+  font-size: 300%;
+  margin: 0;
+}
+.title-text {
+  color: #eee;
+  font-size: 120%;
+  line-height: 1.5;
+  text-align: justify;
 }
